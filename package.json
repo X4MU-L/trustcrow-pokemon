@@ -15,6 +15,7 @@
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
+    "turbo": "^1.12.4",
     "use-debounce": "^10.0.0"
   },
   "devDependencies": {
