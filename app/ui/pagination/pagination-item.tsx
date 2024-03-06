@@ -11,7 +11,7 @@ export default function PaginationItem({
   position?: 'first' | 'last' | 'middle' | 'single';
   isActive: boolean;
 }) {
-  const className = `flex transition-all duration-150 h-10 w-12 items-center justify-center text-sm border
+  const className = `flex transition-all duration-150 h-8 w-8 lg:h-10 lg:w-12 items-center justify-center text-sm border
       ${position === 'first' || position === 'single' ? 'rounded-l-md' : ''}
         ${position === 'last' || position === 'single' ? 'rounded-r-md' : ''}
         ${isActive && 'z-10 bg-blue-600 border-blue-600 text-white '}

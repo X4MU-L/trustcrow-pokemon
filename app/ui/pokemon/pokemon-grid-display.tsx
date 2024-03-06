@@ -28,12 +28,14 @@ export default function PokemonGridDisplay({
         name='search-types'
         placeholder='search here..'
       />
-      <h3 className='text-3xl pt-12 pb-6 text-center'>
+      <h3 className='text-xl lg:text-3xl pt-12 pb-6 text-center'>
         Pokemon Categories/Types
       </h3>
       <div
-        className={`mb-32 items-center grid text-center lg:mb-0 ${
-          filteredCategories.length ? 'md:grid-cols-4' : 'md:grid-cols-1'
+        className={`mb-32 items-center w-full grid text-center lg:mb-0 ${
+          filteredCategories.length
+            ? 'gird_flow md:grid-cols-4 '
+            : 'md:grid-cols-1'
         } lg:text-left`}
       >
         {filteredCategories.length ? (

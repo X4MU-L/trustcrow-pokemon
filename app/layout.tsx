@@ -21,8 +21,8 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <PokemanAppProvider defaultTheme='dark'>
-          <main className='flex min-h-screen flex-col mx-auto items-center max-w-[75%] w-full mt-16'>
-            <div className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex'>
+          <main className='flex min-h-screen flex-col mx-auto items-center max-w-[75%] w-full'>
+            <div className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex mt-16'>
               <Link href='/'>
                 {' '}
                 <h2>Pokemon Type Api</h2>

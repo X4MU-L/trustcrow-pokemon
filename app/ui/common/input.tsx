@@ -17,7 +17,7 @@ export default function Input({
   placeholder,
 }: Props) {
   return (
-    <label className='flex flex-col items-center  w-full' htmlFor={name}>
+    <label className='flex flex-col items-center mt-8  w-full' htmlFor={name}>
       <span className='  whitespace-nowrap inline-block capitalize'>
         {name.split('-').join(' ')}
       </span>
@@ -26,7 +26,7 @@ export default function Input({
           autoComplete='off'
           onChange={setValue}
           value={value}
-          className='w-full px-4 py-3 shadow-lg focus:bg-gray-800 bg-gray-800 focus:text-inherit placeholder-gray-400 text-gray-700 rounded-full  focus:ring focus:outline-none  text-xl font-semibold transition-colors'
+          className='w-full px-3  lg:px-4 py-3  shadow-lg focus:bg-gray-800 bg-gray-800 focus:text-inherit placeholder-gray-400 text-gray-700 rounded-full  focus:ring focus:outline-none  text-xl font-semibold transition-colors'
           type={type}
           id={name}
           defaultValue={defaultValue}

@@ -24,17 +24,17 @@ export default function Search() {
 
   return (
     <label
-      className='flex flex-col items-center  w-full'
+      className='flex flex-col items-center mt-8 w-full'
       htmlFor='search-pokemons'
     >
       <span className='  whitespace-nowrap inline-block capitalize'>
         Search Pokemons
       </span>
-      <div className='pb-2 pt-4'>
+      <div className='pb-2 pt-4 max-w-md w-full'>
         <input
           autoComplete='off'
           onChange={(e) => handleSearch(e.target.value)}
-          className='w-full px-4 py-3 shadow-lg focus:bg-gray-800 bg-gray-800 focus:text-inherit placeholder-gray-400 text-gray-700 rounded-full  focus:ring focus:outline-none  text-xl font-semibold transition-colors'
+          className='w-full px-3  lg:px-4 py-3 shadow-lg focus:bg-gray-800 bg-gray-800 focus:text-inherit placeholder-gray-400 text-gray-700 rounded-full  focus:ring focus:outline-none  text-xl font-semibold transition-colors'
           type='search'
           id='search-pokemons'
           defaultValue={searchParams.get('q')?.toString()}

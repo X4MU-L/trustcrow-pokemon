@@ -11,7 +11,7 @@ export default function PaginationArrow({
   isDisabled?: boolean;
 }) {
   const className = `
-      'flex h-10 w-10 transition-all duration-150 items-center justify-center rounded-md border'
+      'flex h-8 w-8 lg:h-10 lg:w-10 transition-all duration-150 items-center justify-center rounded-md border'
         ${isDisabled ? 'pointer-events-none text-gray-300' : ''}
         ${!isDisabled ? 'hover:bg-[#3f3e3e70]' : ''}
         ${direction === 'left' ? 'mr-2 md:mr-4' : ''}

@@ -15,7 +15,7 @@ export default async function PokemonPage({
     console.log(data);
     return (
       <>
-        <div className='self-start max-w-screen-sm mx-auto w-full'>
+        <div className='self-start max-w-screen-sm mx-auto my-8 w-full'>
           <BackButton />
         </div>
         <PokemonCard statsInfo={data} />
