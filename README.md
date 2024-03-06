@@ -26,4 +26,42 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
+This Project was deployed to Vercel using [GitHub CLI](https://cli.github.com/) and [Vercel CLI](https://vercel.com/docs/cli)
+
+Check out the docs on how to install [GitHub CLI](https://cli.github.com/) for your OS.
+
+Create an account on [Vercel](https://vercel.com/) and also create a token on the settings tab.
+
+create a vercel workflow file [vercel.yml](./.github/workflows/vercel.yml)
+
+The files sets up the necessary OS and Node environment
+
+- sets the environment variable `$VERCEL_TOKEN` from github secret
+- installs [Vercel CLI](https://vercel.com/docs/cli)
+- Pull vercel environment info using the TOKEN for a preview
+- Build the app
+- Deploy a prebuilt to production
+
+To set github secrets run:
+
+```bash
+$ gh secret set <VARIABLE_NAME> [optional-flags]
+
+```
+
+push your code to GitHub
+
+> [!WARNING]
+> This workflow is currently set to deploy on every push or PR to the `main` branch, you should change that.
+
+To replicate locally using [Vercel CLI](https://vercel.com/docs/cli)
+
+```bash
+$ npm i -g vercel@latest
+$ export VERCEL_TOKEN=<token-created-on-vercel>
+$ vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+$ vercel build --prod --token=$VERCEL_TOKEN
+$ vercel deploy --prebuilt  --token=$VERCEL_TOKEN
+```
+
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
